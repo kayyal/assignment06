@@ -9,7 +9,6 @@ public class Q01 {
 
 
 
-
     }
 
 
@@ -20,28 +19,28 @@ public class Q01 {
             list.remove(list.size() - 1);
 
 
-        for (int i = list.size() - 1; i < 2; i -= 2) {
-            if (i == list.size() - 1) {
-                if (list.get(i - 2) > list.get(0)) {
-                    list.remove(i);
-                    list.remove(i - 1);
-                }
-
-            } else {
-                if (list.get(i - 2) > list.get(i + 1)) {
-                    list.remove(i);
-                    list.remove(i - 1);
+            for (int i = list.size() - 1; i > 2; i -= 2) {
+                if (i == list.size() - 1) {
+                    if (list.get(i - 2) > list.get(0)) {
+                        list.remove(i);
+                        list.remove(i - 1);
+                    }
+                } else {
+                    if (list.get(i - 2) > list.get(i + 1)) {
+                        list.remove(i);
+                        list.remove(i - 1);
+                    }
                 }
             }
-        }
 
         return list;
     }
 
-    public static void printList (ArrayList<Integer> list){
-        for (Integer in :list
-             ) {
+    public static void printList(ArrayList<Integer> list) {
+        for (Integer in : list
+        ) {
             System.out.print(in + " ");
         }
+        System.out.println();
     }
 }
