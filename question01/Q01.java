@@ -13,7 +13,7 @@ public class Q01 {
     }
 
 
-    public static ArrayList<Integer> arrayTrimmer(ArrayList<Integer> list) {
+    public static ArrayList<Integer> listTrimmer(ArrayList<Integer> list) {
         if (list.size() == 0)
             return list;
         if (list.size() % 2 == 1)
