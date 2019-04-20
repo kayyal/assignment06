@@ -1,19 +1,19 @@
 package assignment06.question01;
 
-import com.sun.java.swing.action.AlignRightAction;
 
 import java.util.ArrayList;
 
 public class Q01 {
     public static void main(String[] args) {
 
-        
+
+
 
 
     }
 
 
-    public ArrayList<Integer> arrayTrimmer(ArrayList<Integer> list) {
+    public static ArrayList<Integer> arrayTrimmer(ArrayList<Integer> list) {
         if (list.size() == 0)
             return list;
         if (list.size() % 2 == 1)
@@ -36,5 +36,12 @@ public class Q01 {
         }
 
         return list;
+    }
+
+    public static void printList (ArrayList<Integer> list){
+        for (Integer in :list
+             ) {
+            System.out.print(in + " ");
+        }
     }
 }
